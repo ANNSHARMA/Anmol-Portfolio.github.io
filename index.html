@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b37a8d6a03.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import 'portfolio1.css';
+    </style>
+    <title>my portfolio</title>
+</head>
+<body>
+    
+<section id="home">
+<div class="main-width">
+    <header>
+<div class="logo">
+    <i class="fa-solid fa-a"></i>
+</div>
+
+<nav>
+    <div class="hamb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-list">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#service">Technologies</a></li>
+        <li class="btn"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+<div class="container">
+
+<div class="home-text">
+    <h2>Hi, There!</h2>
+    <h1>I Am <span>Anmol</span></h1>
+    <p>To continually enhance my skills and knowledge in web development, aiming for senior developer roles and taking on increasingly challenging projects to contribute to the growth of the organization.
+    To deliver high-quality software solutions by leveraging my expertise in programming languages and frameworks, collaborating effectively with the team, and ensuring efficient project execution within deadlines. 
+        Innovation and To leverage my creativity and technical skills to develop innovative solutions, tackle complex challenges, and apply best practices in software development to improve efficiency and user experience.</p>
+
+<div class="social">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>   
+</div>
+<button type="button" >More About Me</button>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+    <div class="aboutcontent">
+        <h2>About <span>Me</span></h2>
+       
+        <p>As you know my name is Anmol, i am basically from Banaras (Uttar Pradesh) but,
+            i am selltted in Faridabad from my childhood, Talking about my education 
+            qalification i completed my S.SC from Sarvodaya Bal Vidyala School with 7.2
+            CGPA. Currently, i am persuing Bachelor of Arts from Indra Gandhi National Open
+            University (IGNOU) apart from that i am doing Web Devlopment from Arth Institute
+            in which till now i have completed HTML, CSS, Javascript, Bootsrap, Photoshop,
+            PHP, SQL etc.</p>
+        
+    </div>
+</section>
+
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading" data-aos="zoom-in-up">Latest <span>Project</span></h2>
+    <div class="portfolio-part">
+
+        <a href="http://shopifyecommerce.rf.gd/">
+        <div class="portfolio-box">
+            <img src="covers/shopify.png" alt="">
+        </div>
+    </a>
+
+    <a href="https://annsharma.github.io/stopwacth.github.io/">
+        <div class="portfolio-box" >
+            <img src="covers/stopwatch.jpg" alt="">
+        </div>
+    </a>
+
+    <a href="https://annsharma.github.io/SongEcho.github.io/">
+        <div class="portfolio-box">
+            <img src="covers/spotify2.jpg" alt="">
+        </div>
+    </a>
+
+    </div>
+</section>
+
+<section class="service" id="service">
+    <h2 class="heading" data-aos="zoom-in-up">Our <span>Service</span></h2>
+    <div class="service-contain">
+        
+    <div class="service-contain">
+        <div class="service-box">
+        <i class='bx bxl-php'></i>
+            <h3>PHP Developer</h3>
+            <p>A PHP developer is a professional who specializes in using the PHP programming language to develop web applications, websites, and other digital solutions. PHP (Hypertext Preprocessor) is a popular server-side scripting language widely used for web development.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Developer</h3>
+            <p>A web developer is a professional who specializes in the development of websites and web applications. They are responsible for designing, coding, and maintaining the technical aspects of a website, ensuring its functionality and user experience.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+  
+    <h2 class="heading" data-aos="">Contact <span>Me!!</span></h2>
+    <form action="#">
+        <div class="input-boxes">
+            <input type="text" name="fname" id="A" placeholder="Full Name" required>
+            <input type="email" name="email" id="A" placeholder="Email Address" required>
+        </div>
+        <div class="input-boxes">
+            <input type="tel" name="num" id="A" placeholder="Mobile Number" required onkeypress="return onlyNumber(event)">
+            <input type="text" name="sub" id="A" placeholder="Subject" required>
+        </div>
+        <textarea name="msg" id="B" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Meassage" class="btn" name="submit" >
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-style">
+        <p>Copyright &copy; 2023 by Anmol || All Rights Reserved..</p>
+    </div>
+    
+</footer>
+
+
+<script>
+let hmb = document.querySelector(".hamb");
+let nav = document.querySelector(".nav-list");
+let links = document.querySelector(".nav-list li");
+
+hmb.addEventListener("click",function(){
+    this.classList.toggle("click");
+    nav.classList.toggle("open");
+    
+});
+</script>
+
+
+</body>
+</html>
